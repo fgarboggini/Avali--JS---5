@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas Domésticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Tarefas Domésticas</h1>
+        
+        <!-- Campo para adicionar membros -->
+        <div class="input-group">
+            <input type="text" id="newMemberInput" placeholder="Adicione um membro">
+            <button onclick="addMember()">Adicionar Membro</button>
+        </div>
+        
+        <!-- Campo para adicionar tarefas -->
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa">
+        </div>
+        
+        <!-- Campo para data e hora -->
+        <div class="input-group">
+            <input type="date" id="taskDate">
+            <input type="time" id="taskTime">
+            <select id="memberSelect">
+                <option value="">Selecionar Membro</option>
+            </select>
+            <button onclick="addTask()">Adicionar Tarefa</button>
+        </div>
+        
+        <!-- Lista de tarefas -->
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
